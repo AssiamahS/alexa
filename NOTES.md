@@ -1,0 +1,1 @@
+- exportArchive "Error Downloading App Information" = no ASC app record for the bundle yet (POST /v1/apps is 403 API-wide — record must be created in the ASC UI, then re-run the testflight job). Archive/cloud-signing itself was fine. (2026-08-04)
