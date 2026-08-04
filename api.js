@@ -9,7 +9,7 @@
 const http = require('http');
 const { connect, loadCookie } = require('./client');
 
-const PORT = process.env.ALEXA_API_PORT || 8797;
+const PORT = process.env.ALEXA_API_PORT || 8798;
 
 let alexaPromise = null;
 function ensureAlexa() {

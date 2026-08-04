@@ -49,7 +49,7 @@ Mac side:
 
 ```bash
 node api.js                      # or the com.sly.alexa-api launchd agent
-curl localhost:8797/health
+curl localhost:8798/health
 ```
 
 App side: XcodeGen project (`ios/project.yml`), built and cloud-signed in CI

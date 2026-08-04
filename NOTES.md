@@ -1,1 +1,2 @@
 - exportArchive "Error Downloading App Information" = no ASC app record for the bundle yet (POST /v1/apps is 403 API-wide — record must be created in the ASC UI, then re-run the testflight job). Archive/cloud-signing itself was fine. (2026-08-04)
+- port claims: check IP-SPECIFIC binds too — cony/api.mjs sits on 100.97.199.99:8797 and eats tailnet traffic while a 0.0.0.0 listener only gets localhost. lsof -iTCP:PORT missed it; /usr/sbin/netstat -anv -p tcp shows both. alexa api moved to 8798. (2026-08-04)

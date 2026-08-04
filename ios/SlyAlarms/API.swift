@@ -45,7 +45,7 @@ enum APIError: LocalizedError {
 }
 
 struct AlarmAPI: Sendable {
-    static let defaultBase = "http://saints-macbook-air.tail40af16.ts.net:8797"
+    static let defaultBase = "http://saints-macbook-air.tail40af16.ts.net:8798"
 
     var base: String {
         UserDefaults.standard.string(forKey: "apiBase") ?? Self.defaultBase
