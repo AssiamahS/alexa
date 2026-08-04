@@ -1,0 +1,41 @@
+name: SlyAlarms
+options:
+  bundleIdPrefix: com.djsly
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    DEVELOPMENT_TEAM: QGMAWHX827
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  SlyAlarms:
+    type: application
+    platform: iOS
+    sources:
+      - path: SlyAlarms
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.djsly.slyalarms
+      CODE_SIGN_STYLE: Automatic
+      TARGETED_DEVICE_FAMILY: 1
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      SUPPORTS_XR_DESIGNED_FOR: NO
+    info:
+      path: SlyAlarms/Resources/Info.plist
+      properties:
+        CFBundleName: SlyAlarms
+        CFBundleDisplayName: SlyAlarms
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSExceptionDomains:
+            tail40af16.ts.net:
+              NSIncludesSubdomains: true
+              NSExceptionAllowsInsecureHTTPLoads: true

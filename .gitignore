@@ -1,2 +1,4 @@
 node_modules/
 data/
+ios/SlyAlarms.xcodeproj/
+ios/build/

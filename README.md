@@ -39,3 +39,19 @@ claude mcp add --scope user alexa -- node /path/to/alexa/server.js
 
 Alarms still ring on the Echo they were created on — this is the remote
 control, same as the app.
+
+## SlyAlarms iPhone app
+
+`ios/` holds a SwiftUI client (`SlyAlarms`) that talks to `api.js` on the Mac
+over Tailscale — list with toggles, swipe to delete, add alarm/reminder sheet.
+
+Mac side:
+
+```bash
+node api.js                      # or the com.sly.alexa-api launchd agent
+curl localhost:8797/health
+```
+
+App side: XcodeGen project (`ios/project.yml`), built and cloud-signed in CI
+(`.github/workflows/ci.yml`) to TestFlight. Base URL defaults to the Mac's
+tailnet name; override via the `apiBase` user default.
