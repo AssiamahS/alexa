@@ -1,5 +1,7 @@
 # alexa
 
+**Install:** open [assiamahs.github.io/alexa/install.html](https://assiamahs.github.io/alexa/install.html) in Safari on your iPhone.
+
 MCP server for Alexa alarms and reminders. Lets Claude (or any MCP client)
 list, create, toggle, and delete alarms/reminders on Echo devices — the same
 data the Alexa app shows under Alarms & Timers.
